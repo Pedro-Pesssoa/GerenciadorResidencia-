@@ -23,11 +23,12 @@ class AcompanhamentoTaxa(models.Model):
     comentario = models.TextField(
         verbose_name='comentario',
         max_length=1000,
+        null=True, blank=True,
     )
 
     def __str__(self):
         '''Método que retorna a representação do objeto como string.'''
-        return self.nome
+        return f'{self.taxa}'
 
     class Meta:
         '''Sub classe para definir meta atributos da classe principal.'''

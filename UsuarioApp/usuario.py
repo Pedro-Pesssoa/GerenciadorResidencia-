@@ -23,7 +23,6 @@ class Usuario(models.Model):
 
     quarto = models.IntegerField(
         verbose_name="Quarto",
-        max_length=1,
     )
     
     lider = models.BooleanField(
@@ -48,6 +47,6 @@ class Usuario(models.Model):
     class Meta:
         '''Sub classe para definir meta atributos da classe principal.'''
 
-        app_label = 'LimpezaApp'
+        app_label = 'UsuarioApp'
         verbose_name = 'Usuario'
         verbose_name_plural = 'Usuarios'
