@@ -16,10 +16,6 @@ class LimpezaAdmin(admin.ModelAdmin):
         'data',
     ]
 
-    # def has_change_permission(self, request, obj=None):
-    #     # Permitir apenas superusuários
-    #     return request.user.is_superuser
-
 @admin.register(AcompanhamentoLimpeza)
 class AcompanhamentoLimpezaAdmin(admin.ModelAdmin):
     form = AcompanhamentoLimpezaForm
